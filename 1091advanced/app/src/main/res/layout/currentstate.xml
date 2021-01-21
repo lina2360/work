@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/backg3"
+    >
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="30dp"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"
+        android:layout_marginBottom="30dp"
+        android:id="@+id/bg"
+        android:background="#FFFFFF"
+
+        >
+
+
+
+        <TextView
+            android:id="@+id/tv1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_gravity="center"
+            android:layout_alignStart="@+id/button4_1"
+            android:layout_marginTop="120dp"
+            android:text="選擇日期："
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+
+        <TextView
+            android:id="@+id/tv2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            android:layout_alignStart="@+id/button4_1"
+            android:layout_alignParentTop="true"
+            android:layout_gravity="center"
+
+            android:layout_marginTop="80dp"
+            android:text="當前時間：" />
+
+
+
+        <!--<TextView-->
+            <!--android:id="@+id/tv3"-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:layout_alignParentTop="true"-->
+            <!--android:layout_gravity="center"-->
+            <!--android:layout_alignStart="@+id/button4_1"-->
+            <!--android:layout_marginTop="160dp"-->
+            <!--android:text="發放數量：" />-->
+
+
+        <TextView
+            android:id="@+id/tv4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_gravity="center"
+            android:layout_alignStart="@+id/button4_1"
+            android:layout_marginTop="160dp"
+            android:text="剩餘數量：" />
+
+
+        <TextView
+            android:id="@+id/tv5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_gravity="center"
+            android:layout_alignStart="@+id/button4_1"
+            android:layout_marginTop="200dp"
+            android:text="當前預購資格：可預購" />
+
+
+        <TextView
+            android:id="@+id/tv6"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_gravity="center"
+            android:layout_alignStart="@+id/button4_1"
+            android:layout_marginTop="240dp"
+            android:text="店家名稱：" />
+
+        <TextView
+            android:id="@+id/tv7"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignStart="@+id/button4_1"
+            android:layout_alignParentTop="true"
+            android:layout_gravity="center"
+            android:layout_marginStart="0dp"
+            android:layout_marginTop="276dp"
+            android:textColor="#FF0000"
+            android:text="" />
+
+
+
+
+
+
+        <Button
+            android:id="@+id/button4_1"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="150dp"
+            android:backgroundTint="#FFE4CA"
+            android:gravity="center"
+            android:layout_gravity="center"
+            android:elegantTextHeight="true"
+            android:text="確定預購" />
+
+        <Button
+            android:id="@+id/button4_2"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="89dp"
+            android:backgroundTint="#FFE4CA"
+            android:gravity="center"
+            android:layout_gravity="center"
+            android:elegantTextHeight="true"
+            android:text="返回" />
+
+
+
+
+
+
+    </RelativeLayout>
+</LinearLayout>

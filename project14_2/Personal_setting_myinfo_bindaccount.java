@@ -1,0 +1,173 @@
+package com.project14.nccu105.project14_2;
+
+import android.content.Intent;
+import android.os.Bundle;
+import android.support.v7.app.AppCompatActivity;
+import android.support.v7.widget.Toolbar;
+import android.view.KeyEvent;
+import android.view.View;
+import android.widget.Button;
+import android.widget.ImageButton;
+import android.widget.Toast;
+
+public class Personal_setting_myinfo_bindaccount extends AppCompatActivity {
+    Button btn171,btn172,btn173,btn174,btn175,btn176,btn177,btn178,btn179;
+    ImageButton ib171;
+
+    protected void onCreate(Bundle savedInstanceState) {
+        super.onCreate(savedInstanceState);
+        setContentView(R.layout.personal_setting_myinfo_bindaccount);
+//        getSupportActionBar().hide();
+        //設定隱藏狀態
+
+        Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar17);
+        setSupportActionBar(toolbar);
+        getSupportActionBar().setDisplayShowTitleEnabled(true);
+        getSupportActionBar().setDisplayHomeAsUpEnabled(true);
+        getSupportActionBar().setHomeButtonEnabled(true);
+
+        toolbar.setNavigationIcon(R.drawable.arrow_back_icon);
+        toolbar.setNavigationOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent1 = new Intent();
+                intent1.setClass(Personal_setting_myinfo_bindaccount.this, Personal_setting_myinfo.class);
+                startActivity(intent1);
+                finish();
+            }
+        });
+
+        btn171 = (Button) findViewById(R.id.btn17_1);
+//        btn172 = (Button) findViewById(R.id.btn17_2);
+        btn173 = (Button) findViewById(R.id.btn17_3);
+        btn174 = (Button) findViewById(R.id.btn17_4);
+        btn175 = (Button) findViewById(R.id.btn17_5);
+        btn176 = (Button) findViewById(R.id.btn17_6);
+        btn177 = (Button) findViewById(R.id.btn17_7);
+        btn178 = (Button) findViewById(R.id.btn17_8);
+        btn179 = (Button) findViewById(R.id.btn17_9);
+//        ib171 = (ImageButton) findViewById(R.id.ib17_1);
+
+        View.OnClickListener OCL = new View.OnClickListener() {
+
+            @Override
+            public void onClick(View v) {
+                if (v instanceof Button) {
+                    int id = ((Button) v).getId();
+                    switch (id) {
+                        case R.id.btn17_1:
+                            String msg1 = "往論壇頁";
+                            Intent intent1 = new Intent();
+                            intent1.setClass(Personal_setting_myinfo_bindaccount.this, Forum.class);
+                            startActivity(intent1);
+//                            Toast.makeText(Personal_setting_myinfo_bindaccount.this, msg1, Toast.LENGTH_SHORT).show();
+                            Personal_setting_myinfo_bindaccount.this.finish();
+                            break;
+//                        case R.id.btn17_2:
+//                            String msg2 = "往逛逛頁";
+//                            Intent intent2 = new Intent();
+//                            intent2.setClass(Personal_setting_myinfo_bindaccount.this, Buyer.class);
+//                            startActivity(intent2);
+////                            Toast.makeText(Personal_setting_myinfo_bindaccount.this, msg2, Toast.LENGTH_SHORT).show();
+//                            Personal_setting_myinfo_bindaccount.this.finish();
+//                            break;
+                        case R.id.btn17_3:
+                            String msg3 = "往接單頁";
+                            Intent intent3 = new Intent();
+                            intent3.setClass(Personal_setting_myinfo_bindaccount.this, Seller.class);
+                            startActivity(intent3);
+//                            Toast.makeText(Personal_setting_myinfo_bindaccount.this, msg3, Toast.LENGTH_SHORT).show();
+                            Personal_setting_myinfo_bindaccount.this.finish();
+                            break;
+                        case R.id.btn17_4:
+                            String msg4 = "往地圖頁";
+                            Intent intent4 = new Intent();
+                            intent4.setClass(Personal_setting_myinfo_bindaccount.this, Maps.class);
+                            startActivity(intent4);
+//                            Toast.makeText(Personal_setting_myinfo_bindaccount.this, msg4, Toast.LENGTH_SHORT).show();
+                            Personal_setting_myinfo_bindaccount.this.finish();
+                            break;
+                        case R.id.btn17_5:
+                            String msg5 = "往通知頁";
+                            Intent intent5 = new Intent();
+                        intent5.setClass(Personal_setting_myinfo_bindaccount.this,Notify.class);
+                            startActivity(intent5);
+//                            Toast.makeText(Personal_setting_myinfo_bindaccount.this, msg5, Toast.LENGTH_SHORT).show();
+                            Personal_setting_myinfo_bindaccount.this.finish();
+                            break;
+
+                        case R.id.btn17_6:
+                            String msg6 = "往個人頁";
+                            Intent intent6 = new Intent();
+                            intent6.setClass(Personal_setting_myinfo_bindaccount.this, Personal.class);
+                            startActivity(intent6);
+//                            Toast.makeText(Personal_setting_myinfo_bindaccount.this, msg6, Toast.LENGTH_SHORT).show();
+                            Personal_setting_myinfo_bindaccount.this.finish();
+                            break;
+                        case R.id.btn17_7:
+                            String msg7 = "連接成功";
+//                            Intent intent7 = new Intent();
+//                            intent7.setClass(Personal_setting_myinfo_bindaccount.this, Personal.class);
+//                            startActivity(intent7);
+                            Toast.makeText(Personal_setting_myinfo_bindaccount.this, msg7, Toast.LENGTH_SHORT).show();
+//                            Personal_setting_myinfo_bindaccount.this.finish();
+                            break;
+                        case R.id.btn17_8:
+                            String msg8 =  "連接成功";
+//                            Intent intent8 = new Intent();
+//                            intent8.setClass(Personal_setting_myinfo_bindaccount.this, Personal.class);
+//                            startActivity(intent8);
+                            Toast.makeText(Personal_setting_myinfo_bindaccount.this, msg8, Toast.LENGTH_SHORT).show();
+//                            Personal_setting_myinfo_bindaccount.this.finish();
+                            break;
+                        case R.id.btn17_9:
+                            String msg9 = " 連接成功";
+//                            Intent intent9 = new Intent();
+//                            intent9.setClass(Personal_setting_myinfo_bindaccount.this, Personal.class);
+//                            startActivity(intent9);
+                            Toast.makeText(Personal_setting_myinfo_bindaccount.this, msg9, Toast.LENGTH_SHORT).show();
+//                            Personal_setting_myinfo_bindaccount.this.finish();
+                            break;
+                    }
+
+                }
+
+//                if (v instanceof ImageButton) {
+//                    int id2 = ((ImageButton) v).getId();
+//                    switch (id2) {
+//                        case R.id.ib17_1:
+//                            Intent intent10 = new Intent();
+//                            intent10.setClass(Personal_setting_myinfo_bindaccount.this, Personal_setting_myinfo.class);
+//                            startActivity(intent10);
+//                            Personal_setting_myinfo_bindaccount.this.finish();
+//                            break;
+//                    }
+//                }
+            }
+
+        };
+        btn171.setOnClickListener(OCL);
+//        btn172.setOnClickListener(OCL);
+        btn173.setOnClickListener(OCL);
+        btn174.setOnClickListener(OCL);
+        btn175.setOnClickListener(OCL);
+        btn176.setOnClickListener(OCL);
+        btn177.setOnClickListener(OCL);
+        btn178.setOnClickListener(OCL);
+        btn179.setOnClickListener(OCL);
+//        ib171.setOnClickListener(OCL);
+
+    }
+
+
+    public boolean onKeyDown(int keyCode, KeyEvent event) {
+        if (keyCode == KeyEvent.KEYCODE_BACK) {
+            Intent intent1 = new Intent();
+            intent1.setClass(Personal_setting_myinfo_bindaccount.this, Personal_setting_myinfo.class);
+            startActivity(intent1);
+            finish();
+        }
+        return false;
+    }
+}
+

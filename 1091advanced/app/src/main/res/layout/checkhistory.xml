@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/backg3"
+
+    >
+    <RelativeLayout
+        android:id="@+id/bg5"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_marginTop="30dp"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"
+        android:layout_marginBottom="30dp"
+        android:background="#FFFFFF"
+
+        >
+
+        <Button
+            android:id="@+id/button2_4"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:layout_alignStart="@+id/layout2"
+            android:backgroundTint="#FFE4CA"
+            android:layout_marginTop="20dp"
+            android:gravity="center"
+            android:layout_gravity="center"
+            android:elegantTextHeight="true"
+            android:text="返回" />
+
+
+
+        <!--<Button-->
+            <!--android:id="@+id/button2_3"-->
+            <!--android:layout_width="100dp"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:layout_alignTop="@+id/button2_4"-->
+            <!--android:layout_alignEnd="@+id/layout2"-->
+            <!--android:backgroundTint="#FFE4CA"-->
+            <!--android:layout_gravity="center"-->
+            <!--android:elegantTextHeight="true"-->
+            <!--android:text="預購狀態" />-->
+
+        <LinearLayout
+            android:id="@+id/layout2"
+            android:layout_width="match_parent"
+            android:layout_height="300dp"
+            android:layout_below="@+id/button2_4"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="20dp"
+            android:orientation="vertical">
+            <ListView
+                android:id="@+id/lv2"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                >
+
+
+            </ListView>
+
+        </LinearLayout>
+
+
+
+
+
+
+
+
+    </RelativeLayout>
+</LinearLayout>
