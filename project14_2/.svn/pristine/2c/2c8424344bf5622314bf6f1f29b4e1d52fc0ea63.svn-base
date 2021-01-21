@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    >
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:orientation="horizontal"
+
+        >
+
+
+
+
+        <ImageButton
+            android:layout_width="60dp"
+            android:layout_height="match_parent"
+
+            android:background="@drawable/arrowleft"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:id="@+id/ib15_1"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="修改手機號碼"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:layout_gravity="center"
+            android:id="@+id/tv15_1" />
+
+    </LinearLayout>
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="7"
+        android:id="@+id/sv15"
+        >
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/tv15_2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="更新手機號碼" />
+
+                <EditText
+                    android:id="@+id/et15_1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:ems="10"
+                    android:inputType="textPersonName"
+                    android:text="新手機號碼" />
+
+                <TextView
+                    android:id="@+id/tv15_3"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="輸入密碼確認" />
+
+                <EditText
+                    android:id="@+id/et15_2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:ems="10"
+                    android:inputType="textPersonName"
+                    android:text="原密碼" />
+
+                <Button
+                    android:id="@+id/btn15_7"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="確認更改" />
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+    </ScrollView>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:layout_gravity="bottom">
+
+        <Button
+            android:id="@+id/btn15_1"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_weight="1"
+            android:text="@string/forum" />
+
+        <Button
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:text="@string/buyer"
+            android:id="@+id/btn15_2"
+            android:layout_gravity="center" />
+
+        <Button
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:text="@string/seller"
+            android:id="@+id/btn15_3"
+            android:layout_gravity="center" />
+
+        <Button
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:text="@string/map"
+            android:id="@+id/btn15_4"
+            android:layout_gravity="center" />
+
+        <Button
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:text="@string/notify"
+            android:id="@+id/btn15_5"
+            android:layout_gravity="center"
+            />
+        <Button
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:text="@string/personal"
+            android:id="@+id/btn15_6"
+            android:layout_gravity="center" />
+    </LinearLayout>
+</LinearLayout>

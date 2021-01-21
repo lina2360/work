@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical">
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/toolbar25"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="#ffd1a4"
+        android:elevation="4dp"
+        android:minHeight="?attr/actionBarSize"
+        android:theme="@style/AppTheme.ToolBarStyle"
+        app:navigationIcon="@drawable/arrow_back_icon"
+        app:popupTheme="@style/AppTheme.PopupOverlay"
+        app:title="使用規範"
+        app:titleTextColor="@android:color/white" />
+
+   <!-- <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:orientation="horizontal"
+        android:background="#ffd1a4"
+
+        >
+
+
+
+
+        <ImageButton
+            android:layout_width="60dp"
+            android:layout_height="match_parent"
+
+            android:background="@drawable/arrowleft"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:id="@+id/ib25_1"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="使用者條款"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:layout_gravity="center"
+            android:id="@+id/tv25_1" />
+
+
+    </LinearLayout>-->
+
+
+    <ScrollView
+        android:id="@+id/sv25"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="7"
+        android:background="#ffeedd"
+        android:paddingLeft="20dp"
+        android:paddingTop="20dp"
+        android:paddingRight="20dp">
+
+
+        <TextView
+            android:id="@+id/tv25_2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="TextView" />
+    </ScrollView>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="0.7"
+        android:paddingTop="3dp"
+        android:elevation="30dp"
+        android:background="#ffeedd"
+        android:layout_gravity="bottom">
+
+        <Button
+            android:id="@+id/btn25_1"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_weight="1"
+            android:text="@string/forum"
+            style="?android:attr/borderlessButtonStyle"
+            android:padding="0dp"
+            android:drawableTop="@drawable/button_house"/>
+
+        <!--<Button-->
+            <!--android:layout_width="0dp"-->
+            <!--android:layout_weight="1"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:text="@string/buyer"-->
+            <!--android:id="@+id/btn25_2"-->
+            <!--android:layout_gravity="center" />-->
+
+        <Button
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:text="@string/seller"
+            android:id="@+id/btn25_3"
+            android:layout_gravity="center"
+            style="?android:attr/borderlessButtonStyle"
+            android:padding="0dp"
+            android:drawableTop="@drawable/button_shoppingbag"/>
+
+        <Button
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:text="@string/map"
+            android:id="@+id/btn25_4"
+            android:layout_gravity="center"
+            style="?android:attr/borderlessButtonStyle"
+            android:padding="0dp"
+            android:drawableTop="@drawable/button_map"/>
+
+        <Button
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:text="@string/notify"
+            android:id="@+id/btn25_5"
+            android:layout_gravity="center"
+            style="?android:attr/borderlessButtonStyle"
+            android:padding="0dp"
+            android:drawableTop="@drawable/button_notification"/>
+        <Button
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:text="@string/personal"
+            android:id="@+id/btn25_6"
+            android:layout_gravity="center"
+            style="?android:attr/borderlessButtonStyle"
+            android:padding="0dp"
+            android:drawableTop="@drawable/button_avatar"/>
+    </LinearLayout>
+</LinearLayout>

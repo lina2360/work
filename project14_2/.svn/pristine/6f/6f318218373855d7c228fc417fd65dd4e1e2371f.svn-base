@@ -1,0 +1,115 @@
+package com.project14.nccu105.project14_2;
+
+import android.content.Intent;
+import android.os.Bundle;
+import android.support.v7.app.AppCompatActivity;
+import android.view.View;
+import android.widget.Button;
+import android.widget.ImageButton;
+import android.widget.Toast;
+
+public class Personal_setting_myinfo_setphone extends AppCompatActivity {
+    Button btn151,btn152,btn153,btn154,btn155,btn156,btn157;
+    ImageButton ib151;
+    protected void onCreate(Bundle savedInstanceState) {
+        super.onCreate(savedInstanceState);
+        setContentView(R.layout.personal_setting_myinfo_setphone);
+        btn151 = (Button) findViewById(R.id.btn15_1);
+        btn152 = (Button) findViewById(R.id.btn15_2);
+        btn153 = (Button) findViewById(R.id.btn15_3);
+        btn154 = (Button) findViewById(R.id.btn15_4);
+        btn155 = (Button) findViewById(R.id.btn15_5);
+        btn156 = (Button) findViewById(R.id.btn15_6);
+        btn157 = (Button) findViewById(R.id.btn15_7);
+        ib151 = (ImageButton) findViewById(R.id.ib15_1);
+
+        View.OnClickListener OCL = new View.OnClickListener(){
+
+            @Override
+            public void onClick(View v) {
+                if (v instanceof Button) {
+                    int id = ((Button) v).getId();
+                    switch (id) {
+                        case R.id.btn15_1:
+                            String msg1 = "往論壇頁";
+                            Intent intent1 = new Intent();
+                            intent1.setClass(Personal_setting_myinfo_setphone.this, Forum.class);
+                            startActivity(intent1);
+//                            Toast.makeText(Personal_setting_myinfo_setphone.this, msg1, Toast.LENGTH_SHORT).show();
+                            Personal_setting_myinfo_setphone.this.finish();
+                            break;
+                        case R.id.btn15_2:
+                            String msg2 = "往逛逛頁";
+                            Intent intent2 = new Intent();
+                            intent2.setClass(Personal_setting_myinfo_setphone.this, Buyer.class);
+                            startActivity(intent2);
+//                            Toast.makeText(Personal_setting_myinfo_setphone.this, msg2, Toast.LENGTH_SHORT).show();
+                            Personal_setting_myinfo_setphone.this.finish();
+                            break;
+                        case R.id.btn15_3:
+                            String msg3 = "往接單頁";
+                            Intent intent3 = new Intent();
+                            intent3.setClass(Personal_setting_myinfo_setphone.this, Seller.class);
+                            startActivity(intent3);
+//                            Toast.makeText(Personal_setting_myinfo_setphone.this, msg3, Toast.LENGTH_SHORT).show();
+                            Personal_setting_myinfo_setphone.this.finish();
+                            break;
+                        case R.id.btn15_4:
+                            String msg4 = "往地圖頁";
+                            Intent intent4 = new Intent();
+                            intent4.setClass(Personal_setting_myinfo_setphone.this, Maps.class);
+                            startActivity(intent4);
+//                            Toast.makeText(Personal_setting_myinfo_setphone.this, msg4, Toast.LENGTH_SHORT).show();
+                            Personal_setting_myinfo_setphone.this.finish();
+                            break;
+                        case R.id.btn15_5:
+                            String msg5 = "往通知頁";
+                            Intent intent5 = new Intent();
+                        intent5.setClass(Personal_setting_myinfo_setphone.this,Notify.class);
+                            startActivity(intent5);
+//                            Toast.makeText(Personal_setting_myinfo_setphone.this, msg5, Toast.LENGTH_SHORT).show();
+                            Personal_setting_myinfo_setphone.this.finish();
+                            break;
+
+                        case R.id.btn15_6:
+                            String msg6 = "往個人頁";
+                            Intent intent6 = new Intent();
+                            intent6.setClass(Personal_setting_myinfo_setphone.this, Personal.class);
+                            startActivity(intent6);
+//                            Toast.makeText(Personal_setting_myinfo_setphone.this, msg6, Toast.LENGTH_SHORT).show();
+                            Personal_setting_myinfo_setphone.this.finish();
+                            break;
+                        case R.id.btn15_7:
+                            String msg7 = "確認送出";
+                            Intent intent7 = new Intent();
+                            intent7.setClass(Personal_setting_myinfo_setphone.this, Personal_setting_myinfo.class);
+                            startActivity(intent7);
+//                            Toast.makeText(Personal_setting_myinfo_setphone.this, msg7, Toast.LENGTH_SHORT).show();
+                            Personal_setting_myinfo_setphone.this.finish();
+                            break;
+
+                    }
+                }
+                if (v instanceof ImageButton) {
+                    int id2 = ((ImageButton) v).getId();
+                    switch (id2) {
+                        case R.id.ib15_1:
+                            Intent intent8 = new Intent();
+                            intent8.setClass(Personal_setting_myinfo_setphone.this, Personal_setting_myinfo.class);
+                            startActivity(intent8);
+                            Personal_setting_myinfo_setphone.this.finish();
+                            break;
+                    }
+                }
+            }
+        };
+        btn151.setOnClickListener(OCL);
+        btn152.setOnClickListener(OCL);
+        btn153.setOnClickListener(OCL);
+        btn154.setOnClickListener(OCL);
+        btn155.setOnClickListener(OCL);
+        btn156.setOnClickListener(OCL);
+        btn157.setOnClickListener(OCL);
+        ib151.setOnClickListener(OCL);
+    }
+}

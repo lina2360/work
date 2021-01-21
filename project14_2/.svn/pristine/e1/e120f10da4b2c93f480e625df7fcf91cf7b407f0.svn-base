@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    >
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:orientation="horizontal"
+
+        >
+
+
+
+
+        <ImageButton
+            android:layout_width="60dp"
+            android:layout_height="match_parent"
+
+            android:background="@drawable/arrowleft"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:id="@+id/ib11_1"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="修改使用者帳號"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:layout_gravity="center"
+            android:id="@+id/tv11_1" />
+
+    </LinearLayout>
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="7"
+        android:id="@+id/sv11"
+        >
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/tv11_2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="更新使用者帳號" />
+
+                <EditText
+                    android:id="@+id/et11_1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:ems="10"
+                    android:inputType="textPersonName"
+                    android:text="新帳號" />
+
+                <TextView
+                    android:id="@+id/tv11_3"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="輸入密碼確認" />
+
+                <EditText
+                    android:id="@+id/et11_2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:ems="10"
+                    android:inputType="textPersonName"
+                    android:text="原密碼" />
+
+                <Button
+                    android:id="@+id/btn11_6"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="確認更改" />
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+    </ScrollView>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:layout_gravity="bottom">
+
+        <Button
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:text="請求"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+
+            android:id="@+id/btn11_1"
+
+            android:layout_gravity="center"
+            />
+
+        <Button
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:text="探索"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:id="@+id/btn11_2"
+
+            android:layout_gravity="center" />
+
+        <Button
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:text="追蹤"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:id="@+id/btn11_3"
+
+            android:layout_gravity="center" />
+
+        <Button
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:text="訂單"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:id="@+id/btn11_4"
+
+            android:layout_gravity="center" />
+
+        <Button
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:text="個人"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:id="@+id/btn11_5"
+
+            android:layout_gravity="center"
+
+            />
+    </LinearLayout>
+</LinearLayout>

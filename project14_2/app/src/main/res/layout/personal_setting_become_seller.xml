@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ffeedd"
+    android:orientation="vertical">
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/toolbar48"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="#ffd1a4"
+        android:elevation="4dp"
+        android:minHeight="?attr/actionBarSize"
+        android:theme="@style/AppTheme.ToolBarStyle"
+        app:navigationIcon="@drawable/arrow_back_icon"
+        app:popupTheme="@style/AppTheme.PopupOverlay"
+        app:title="申請為賣家"
+        app:titleTextColor="@android:color/white" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginRight="20dp"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/tv48_1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="成為代購者申請條款"
+            android:textAlignment="center"
+            android:textSize="18sp" />
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="228dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginBottom="50dp"
+            android:background="@color/browser_actions_bg_grey">
+
+            <TextView
+                android:id="@+id/tv48_2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="成為代購者條款和信用卡" />
+        </ScrollView>
+
+        <RadioButton
+            android:id="@+id/rb48_1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="我已理解成為代購者申請條款及線上信用卡代收付服務約定條款並同意其內容" />
+
+        <Button
+            android:id="@+id/btn48_1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="下一步"
+            android:backgroundTint="#ffd1a4"/>
+
+    </LinearLayout>
+
+</LinearLayout>

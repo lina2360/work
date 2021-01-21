@@ -1,0 +1,126 @@
+package com.project14.nccu105.project14_2;
+
+import android.content.Intent;
+import android.os.Bundle;
+import android.support.v7.app.AppCompatActivity;
+import android.support.v7.widget.RecyclerView;
+import android.support.v7.widget.StaggeredGridLayoutManager;
+import android.view.View;
+import android.widget.Button;
+import android.widget.ImageButton;
+import android.widget.Toast;
+
+import java.util.ArrayList;
+import java.util.List;
+
+public class Personal_setting_mycard extends AppCompatActivity {
+    Button btn191, btn192, btn193, btn194, btn195, btn196;
+    ImageButton ib191;
+
+    protected void onCreate(Bundle savedInstanceState) {
+        super.onCreate(savedInstanceState);
+        setContentView(R.layout.personal_setting_mycard);
+        btn191 = (Button) findViewById(R.id.btn19_1);
+//        btn192 = (Button) findViewById(R.id.btn19_2);
+        btn193 = (Button) findViewById(R.id.btn19_3);
+        btn194 = (Button) findViewById(R.id.btn19_4);
+        btn195 = (Button) findViewById(R.id.btn19_5);
+        btn196 = (Button) findViewById(R.id.btn19_6);
+        ib191 = (ImageButton) findViewById(R.id.ib19_1);
+        List<CardViewMember> memberList = new ArrayList<>();
+        memberList.add(new CardViewMember(1, R.drawable.japan, "遠東銀行"));
+        memberList.add(new CardViewMember(2, R.drawable.america, "富邦銀行"));
+        memberList.add(new CardViewMember(3, R.drawable.korea, "第一銀行"));
+
+        RecyclerView recyclerView = (RecyclerView) findViewById(R.id.recyclerView);
+        recyclerView.setLayoutManager(new StaggeredGridLayoutManager(2, StaggeredGridLayoutManager.VERTICAL));
+        recyclerView.setAdapter(new CardViewMemberAdapter(this, memberList));
+
+        View.OnClickListener OCL = new View.OnClickListener() {
+
+            @Override
+            public void onClick(View v) {
+                if (v instanceof Button) {
+                    int id = ((Button) v).getId();
+                    switch (id) {
+                        case R.id.btn19_1:
+                            String msg1 = "往論壇頁";
+                            Intent intent1 = new Intent();
+                            intent1.setClass(Personal_setting_mycard.this, Forum.class);
+                            startActivity(intent1);
+//                            Toast.makeText(Personal_setting_mycard.this, msg1, Toast.LENGTH_SHORT).show();
+                            Personal_setting_mycard.this.finish();
+                            break;
+//                        case R.id.btn19_2:
+//                            String msg2 = "往逛逛頁";
+//                            Intent intent2 = new Intent();
+//                            intent2.setClass(Personal_setting_mycard.this, Buyer.class);
+//                            startActivity(intent2);
+////                            Toast.makeText(Personal_setting_mycard.this, msg2, Toast.LENGTH_SHORT).show();
+//                            Personal_setting_mycard.this.finish();
+//                            break;
+                        case R.id.btn19_3:
+                            String msg3 = "往接單頁";
+                            Intent intent3 = new Intent();
+                            intent3.setClass(Personal_setting_mycard.this, Seller.class);
+                            startActivity(intent3);
+//                            Toast.makeText(Personal_setting_mycard.this, msg3, Toast.LENGTH_SHORT).show();
+                            Personal_setting_mycard.this.finish();
+
+                            break;
+                        case R.id.btn19_4:
+                            String msg4 = "往地圖頁";
+                            Intent intent4 = new Intent();
+                            intent4.setClass(Personal_setting_mycard.this, Maps.class);
+                            startActivity(intent4);
+//                            Toast.makeText(Personal_setting_mycard.this, msg4, Toast.LENGTH_SHORT).show();
+                            Personal_setting_mycard.this.finish();
+                            break;
+                        case R.id.btn19_5:
+                            String msg5 = "往通知頁";
+                            Intent intent5 = new Intent();
+                            intent5.setClass(Personal_setting_mycard.this, Notify.class);
+                            startActivity(intent5);
+//                            Toast.makeText(Personal_setting_mycard.this, msg5, Toast.LENGTH_SHORT).show();
+                            Personal_setting_mycard.this.finish();
+                            break;
+                        case R.id.btn19_6:
+                            String msg6 = "往個人頁";
+                            Intent intent6 = new Intent();
+                            intent6.setClass(Personal_setting_mycard.this, Personal.class);
+                            startActivity(intent6);
+//                            Toast.makeText(Personal_setting_mycard.this, msg6, Toast.LENGTH_SHORT).show();
+                            Personal_setting_mycard.this.finish();
+                            break;
+
+                    }
+
+                }
+
+                if (v instanceof ImageButton) {
+                    int id2 = ((ImageButton) v).getId();
+                    switch (id2) {
+                        case R.id.ib19_1:
+                            Intent intent7 = new Intent();
+                            intent7.setClass(Personal_setting_mycard.this, Personal_setting.class);
+                            startActivity(intent7);
+                            Personal_setting_mycard.this.finish();
+                            break;
+                    }
+                }
+            }
+        };
+        btn191.setOnClickListener(OCL);
+//        btn192.setOnClickListener(OCL);
+        btn193.setOnClickListener(OCL);
+        btn194.setOnClickListener(OCL);
+        btn195.setOnClickListener(OCL);
+        btn196.setOnClickListener(OCL);
+        ib191.setOnClickListener(OCL);
+
+
+
+    }
+
+
+}

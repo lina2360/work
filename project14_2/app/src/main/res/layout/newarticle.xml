@@ -1,0 +1,201 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical">
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/toolbar36"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="#ffd1a4"
+        android:elevation="4dp"
+        android:minHeight="?attr/actionBarSize"
+        android:theme="@style/AppTheme.ToolBarStyle"
+        app:popupTheme="@style/AppTheme.PopupOverlay"
+        app:title="新增貼文"
+        app:titleTextColor="@android:color/white"
+        app:navigationIcon="@drawable/arrow_back_icon"/>
+
+   <!-- <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:orientation="horizontal"
+
+        android:background="#ffd1a4"
+        >
+
+
+
+        <ImageButton
+            android:layout_width="60dp"
+            android:layout_height="match_parent"
+
+            android:background="@drawable/arrowleft"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:id="@+id/ib36_1"/>
+
+        <TextView
+            android:id="@+id/tv36_1"
+            android:layout_width="wrap_content"
+            android:layout_height="22dp"
+            android:layout_gravity="center"
+            android:text="新增貼文"
+            android:textAppearance="?android:attr/textAppearanceMedium" />
+
+    </LinearLayout>
+-->
+    <ScrollView
+        android:id="@+id/sv36"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="7">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:background="#ffeedd"
+
+            >
+
+
+            <ImageView
+                android:id="@+id/iv36_1"
+                android:layout_width="300dp"
+                android:layout_height="300dp"
+                android:layout_gravity="center"
+                app:srcCompat="@drawable/ic_camera" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="300dp"
+
+                    >
+
+                    <TextView
+                        android:id="@+id/tv36_2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+
+                        android:layout_alignBaseline="@+id/et36_1"
+                        android:layout_marginStart="10dp"
+                        android:text="文章標題:" />
+
+                    <EditText
+                        android:id="@+id/et36_1"
+                        android:layout_width="250dp"
+                        android:layout_height="wrap_content"
+
+                        android:layout_alignParentTop="true"
+                        android:layout_alignParentEnd="true"
+                        android:layout_marginEnd="10dp"
+                        android:text=""
+                        android:textSize="18dp" />
+
+                    <TextView
+                        android:id="@+id/tv36_3"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+
+
+                        android:layout_alignStart="@+id/tv36_2"
+                        android:layout_alignParentTop="true"
+                        android:layout_marginTop="71dp"
+                        android:text="文章分類:" />
+
+                    <EditText
+                        android:id="@+id/et36_2"
+                        android:layout_width="250dp"
+                        android:layout_height="wrap_content"
+                        android:layout_alignBaseline="@+id/tv36_3"
+                        android:layout_alignParentEnd="true"
+                        android:layout_marginEnd="8dp"
+                        android:text=""
+                        android:editable="false"
+                        android:textSize="18dp" />
+
+                    <TextView
+                        android:id="@+id/tv36_4"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+
+
+                        android:layout_alignStart="@+id/tv36_2"
+                        android:layout_alignParentTop="true"
+                        android:layout_marginTop="122dp"
+                        android:text="文章內容:" />
+
+                    <EditText
+                        android:id="@+id/et36_3"
+                        android:layout_width="250dp"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/et36_2"
+                        android:layout_alignParentEnd="true"
+                        android:layout_marginTop="9dp"
+                        android:layout_marginEnd="10dp"
+                        android:text=""
+                        android:textSize="18dp" />
+
+
+
+
+                </RelativeLayout>
+
+                <ImageView
+                    android:layout_width="fill_parent"
+                    android:layout_height="1dp"
+                    android:background="#AAAAAA" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:orientation="vertical"
+                    >
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        >
+
+
+
+                    <Button
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="清空"
+                        android:backgroundTint="#ffd1a4"/>
+                        <Button
+                            android:id="@+id/btn36_1"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:text="發表文章"
+                            android:backgroundTint="#ffeeaa"
+                            />
+                    </LinearLayout>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentBottom="true"
+
+                        android:layout_marginBottom="44dp"
+                        android:text="注意事項:\n如果按下發表文章後未在論壇立刻看見文章，請等待約5秒鐘重新回到該頁面即可看見，謝謝！"
+                        android:textColor="@color/quantum_googred500" />
+                </LinearLayout>
+
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

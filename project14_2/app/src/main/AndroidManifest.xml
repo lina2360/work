@@ -1,0 +1,291 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.project14.nccu105.project14_2">
+
+    <!--
+         The ACCESS_COARSE/FINE_LOCATION permissions are not required to use
+         Google Maps Android API v2, but you must specify either coarse or fine
+         location permissions for the 'MyLocation' functionality. 
+    -->
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.NFC" />
+
+
+
+    <uses-feature
+        android:name="android.hardware.nfc"
+        android:required="true" />
+
+    <meta-data
+        android:name="com.project14.nccu105.project14_2.MyAppGlideModule"
+        android:value="AppGlideModule" />
+
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.READ_SMS" />
+    <uses-permission android:name="android.permission.SEND_SMS" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/bag101"
+        android:label="@string/app_name"
+        android:roundIcon="@drawable/bag101"
+        android:supportsRtl="true"
+
+        android:theme="@style/AppTheme">
+
+        <!--
+             The API key for Google Maps-based APIs is defined as a string resource.
+             (See the file "res/values/google_maps_api.xml").
+             Note that the API key is linked to the encryption key used to sign the APK.
+             You need a different API key for each encryption key, including the release key that is used to
+             sign the APK for publishing.
+             You can define the keys for the debug and release targets in src/debug/ and src/release/. 
+        -->
+
+        <meta-data
+            android:name="com.facebook.sdk.ApplicationId"
+            android:value="@string/facebook_app_id"
+            tools:replace="android:value" />
+
+        <activity
+            android:name="com.facebook.FacebookActivity"
+            android:configChanges="keyboard|keyboardHidden|screenLayout|screenSize|orientation"
+            android:label="@string/app_name" />
+        <activity
+            android:name="com.facebook.CustomTabActivity"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.BROWSABLE" />
+
+                <data android:scheme="@string/fb_login_protocol_scheme" />
+            </intent-filter>
+        </activity>
+
+        <!-- &lt;!&ndash; Facebook Start &ndash;&gt; -->
+        <!-- &lt;!&ndash; FB Login &ndash;&gt; -->
+        <!-- <meta-data -->
+        <!-- android:name="com.facebook.sdk.ApplicationId" -->
+        <!-- android:value="445623332864255" /> -->
+        <!-- &lt;!&ndash; FB Share ex:photo、video、webLink&ndash;&gt; -->
+        <!-- <provider -->
+        <!-- android:name="com.facebook.FacebookContentProvider" -->
+        <!-- android:authorities="com.facebook.app.FacebookContentProvider300570297058014" -->
+        <!-- android:exported="true" /> -->
+
+
+        <!-- <activity -->
+        <!-- android:name="com.facebook.FacebookActivity" -->
+        <!-- android:configChanges="keyboard|keyboardHidden|screenLayout|screenSize|orientation" -->
+        <!-- android:label="@string/app_name" /> -->
+        <!-- <activity -->
+        <!-- android:name="com.facebook.CustomTabActivity" -->
+        <!-- android:exported="true"> -->
+        <!-- <intent-filter> -->
+        <!-- <action android:name="android.intent.action.VIEW" /> -->
+
+
+        <!-- <category android:name="android.intent.category.DEFAULT" /> -->
+        <!-- <category android:name="android.intent.category.BROWSABLE" /> -->
+
+
+        <!-- <data android:scheme="fb445623332864255" /> -->
+        <!-- </intent-filter> -->
+        <!-- </activity> -->
+        <!-- &lt;!&ndash; Facebook End &ndash;&gt; -->
+
+        <meta-data
+            android:name="com.google.android.geo.API_KEY"
+            android:value="@string/google_maps_key" />
+        <meta-data
+            android:name="com.google.android.gms.version"
+            android:value="@integer/google_play_services_version" />
+
+        <activity
+            android:name=".MainPage"
+            android:theme="@style/AppTheme.NoActionBar">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".Register" />
+        <activity android:name=".Personal" />
+        <activity
+            android:name=".Personal_setting"
+            android:parentActivityName=".Personal"
+            android:theme="@style/AppTheme.NoActionBar">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".Personal" />
+        </activity>
+        <activity
+            android:name=".Personal_setting_myinfo"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".Personal_setting_myinfo_setaccount"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".Personal_setting_myinfo_setpassword"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".Personal_setting_myinfo_info"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".Personal_setting_myinfo_setphone"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".Personal_setting_myinfo_setemail"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".Personal_setting_myinfo_bindaccount"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".Personal_setting_myaddress"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".Personal_setting_mycard"
+            android:parentActivityName=".Personal_setting"
+            android:theme="@style/AppTheme.NoActionBar">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".Personal_setting" />
+        </activity>
+        <activity
+            android:name=".Personal_setting_myinvoice"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".Personal_setting_setnotify"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity android:name=".Personal_setting_setlanguage" />
+        <activity
+            android:name=".Personal_setting_help"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".Personal_setting_usage"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity android:name=".Personal_setting_setprivacy" />
+        <activity
+            android:name=".Personal_setting_clean"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".BuyerOrder"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".SellerOrder"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity android:name=".Forum" />
+        <activity android:name=".Seller" />
+        <activity android:name=".NewBuyerOrder_1" />
+        <activity android:name=".NewSellerOrder_1" />
+        <activity
+            android:name=".Forum_buyerforum"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".Forum_sellerforum"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".NewArticle"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".Maps"
+            android:label="@string/title_activity_maps" />
+        <activity android:name=".Notify" />
+        <activity android:name=".ChatRoom" />
+        <activity android:name=".Test1" />
+        <activity
+            android:name=".ChatRoom2"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".ArticlePage"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".Notify_activity"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".Notify_anotify"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".Notify_system"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".Personal_rating"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".Member_page"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity android:name=".PictureChange" />
+        <activity
+            android:name=".Checkout"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".Personal_setting_becomeSeller"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".Personal_setting_sellerBasicInformation"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity android:name=".Personal_setting_sellerFinish" />
+        <activity
+            android:name=".CreditCard"
+            android:theme="@style/AppTheme.NoActionBar" />
+
+        <activity android:name=".PaymentCompleted" />
+        <activity
+            android:name=".Order"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".MoreMyBuy"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".Checkout2"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity android:name=".PaymentCompleted2" />
+        <activity
+            android:name=".AddAddress"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".AddShopAddress"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity android:name=".PackageNumber" />
+        <activity android:name=".BuyerShippingAddress" />
+        <activity android:name=".Rating" />
+
+        <service android:name=".MyFirebaseService">
+            <intent-filter>
+                <action android:name="com.google.firebase.MESSAGING_EVENT" />
+            </intent-filter>
+        </service>
+
+        <activity
+            android:name=".Personal_setting_myinfo_setIntr"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".Personal_setting_prob"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity android:name=".Result" />
+        <activity android:name=".SoSearch" />
+        <activity android:name=".BoSearch" />
+        <activity android:name=".HotArticle1" />
+        <activity android:name=".HotArticle2" />
+        <activity android:name=".HotArticle3"
+            android:theme="@style/AppTheme.NoActionBar"/>
+        <activity android:name=".Order_receipt" />
+        <activity
+            android:name=".Personal_setting_feedback"
+            android:theme="@style/AppTheme.NoActionBar"></activity>
+        <activity android:name=".Maps2" />
+        <activity android:name=".MoreMyChat" />
+        <activity android:name=".PaymentConfirmation" />
+
+    </application>
+
+</manifest>

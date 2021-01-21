@@ -1,0 +1,105 @@
+package com.project14.nccu105.project14_2;
+
+import android.content.Intent;
+import android.os.Bundle;
+import android.support.v7.app.AppCompatActivity;
+import android.view.View;
+import android.widget.AdapterView;
+import android.widget.Button;
+import android.widget.Gallery;
+import android.widget.Toast;
+//6
+public class Forum  extends AppCompatActivity {
+    Button btn62,btn63,btn64,btn65,btn66;
+    public void onCreate(Bundle savedInstanceState) {
+        super.onCreate(savedInstanceState);
+        setContentView(R.layout.forum);
+        Gallery gallery = (Gallery) findViewById(R.id.g6_1);
+        ImageAdapter imageAdapter = new ImageAdapter(this);        // gallery添加ImageAdapter图片资源
+        //設定圖片來源
+        Integer[] mImageIds = {
+                R.drawable.japan,
+                R.drawable.america,
+                R.drawable.korea,
+                R.drawable.taiwan
+        };
+        //設定圖片的位置
+        imageAdapter.setmImageIds(mImageIds);
+        //圖片高度
+        imageAdapter.setHeight(700);
+        //圖片寬度
+        imageAdapter.setWidth(700);
+        gallery.setAdapter(imageAdapter);
+        gallery.setOnItemClickListener(new AdapterView.OnItemClickListener(){
+            public void onItemClick(AdapterView parent, View view, int position, long id) {
+                Toast.makeText(Forum.this, "您選的是第"+position+"張圖", Toast.LENGTH_LONG).show();
+            }
+        });
+
+//        btn62 = (Button) findViewById(R.id.btn6_2);
+        btn63 = (Button) findViewById(R.id.btn6_3);
+        btn64 = (Button) findViewById(R.id.btn6_4);
+        btn65 = (Button) findViewById(R.id.btn6_5);
+        btn66 = (Button) findViewById(R.id.btn6_6);
+        View.OnClickListener OCL = new View.OnClickListener(){
+
+            @Override
+            public void onClick(View v) {
+                int id = ((Button) v).getId();
+                switch (id) {
+
+//                    case R.id.btn6_2:
+//                        String msg2 = "往逛逛頁";
+//                        Intent intent2 = new Intent();
+//                        intent2.setClass(Forum.this,Buyer.class);
+//                        startActivity(intent2);
+////                        Toast.makeText(Forum.this, msg2, Toast.LENGTH_SHORT).show();
+//                        Forum.this.finish();
+//                        break;
+                    case R.id.btn6_3:
+                        String msg3 = "往接單頁";
+                        Intent intent3 = new Intent();
+                        intent3.setClass(Forum.this,Seller.class);
+                        startActivity(intent3);
+//                        Toast.makeText(Forum.this, msg3, Toast.LENGTH_SHORT).show();
+                        Forum.this.finish();
+
+                        break;
+                    case R.id.btn6_4:
+                        String msg4 = "往地圖頁";
+                        Intent intent4 = new Intent();
+                        intent4.setClass(Forum.this,Maps.class);
+                        startActivity(intent4);
+//                        Toast.makeText(Forum.this, msg4, Toast.LENGTH_SHORT).show();
+                        Forum.this.finish();
+                        break;
+                    case R.id.btn6_5:
+                        String msg5 = "往通知頁";
+                        Intent intent5 = new Intent();
+                        intent5.setClass(Forum.this,Notify.class);
+                        startActivity(intent5);
+//                        Toast.makeText(Forum.this, msg5, Toast.LENGTH_SHORT).show();
+                        Forum.this.finish();
+                        break;
+                    case R.id.btn6_6:
+                        String msg6 = "往個人頁";
+                        Intent intent6 = new Intent();
+                        intent6.setClass(Forum.this,Personal.class);
+                        startActivity(intent6);
+//                        Toast.makeText(Forum.this, msg6, Toast.LENGTH_SHORT).show();
+                        Forum.this.finish();
+                        break;
+                }
+            }
+        };
+//        btn62.setOnClickListener(OCL);
+        btn63.setOnClickListener(OCL);
+        btn64.setOnClickListener(OCL);
+        btn65.setOnClickListener(OCL);
+        btn66.setOnClickListener(OCL);
+
+    }
+
+
+
+}

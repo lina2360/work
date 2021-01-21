@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ffeedd"
+    android:orientation="vertical">
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="8">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginRight="20dp"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/tv56_1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="20dp"
+            android:text="使用者您好，您的請求已被接受，請填寫您的收貨資訊，以方便旅行者寄送商品。" />
+
+        <TextView
+            android:id="@+id/tv56_2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="地址:" />
+
+        <Spinner
+            android:id="@+id/sp56_1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+        <TextView
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:text="真實姓名:"/>
+        <EditText
+            android:id="@+id/et56_1"
+            android:layout_height="wrap_content"
+            android:layout_width="match_parent"/>
+        <TextView
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:text="連絡電話:"/>
+        <EditText
+            android:id="@+id/et56_2"
+            android:layout_height="wrap_content"
+            android:layout_width="match_parent"
+            android:phoneNumber="true"/>
+
+        <TextView
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:text="匯款帳戶(交易方式為轉帳者才需選擇):"/>
+        <Spinner
+            android:id="@+id/sp56_2"
+            android:layout_height="wrap_content"
+            android:layout_width="match_parent"
+           />
+
+        <Button
+            android:id="@+id/btn56_1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="50dp"
+            android:backgroundTint="#ffeeaa"
+            android:text="新增地址或帳戶" />
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="150dp">
+
+            <ImageView
+                android:id="@+id/imageView13"
+                android:layout_width="200dp"
+                android:layout_height="220dp"
+
+                android:layout_below="@id/textView"
+
+                android:layout_centerHorizontal="true"
+                app:srcCompat="@drawable/img_squ" />
+
+            <TextView
+                android:id="@+id/tv56_3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/textView"
+                android:layout_alignStart="@+id/tv56_16"
+                android:layout_alignTop="@+id/imageView13"
+                android:layout_marginStart="2dp"
+                android:layout_marginTop="39dp"
+                android:text="匯款資訊　　　　　　 "
+                android:textAlignment="center" />
+
+
+            <!--android:paddingStart="20dp"-->
+            <!--android:paddingEnd="20dp"-->
+            <TextView
+                android:id="@+id/tv56_16"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+
+                android:layout_alignParentBottom="true"
+                android:layout_marginStart="83dp"
+                android:layout_marginBottom="35dp"
+                android:text="戶名: BuyBuyMap　  　\n帳戶類型: 700　　　　  \n帳號: 12345678912345 " />
+        </RelativeLayout>
+
+
+
+
+
+    </LinearLayout>
+
+     </ScrollView>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:gravity="bottom"
+        android:layout_weight="1"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/btn56_2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:backgroundTint="#ffd1a4"
+            android:text="取消" />
+
+        <Button
+            android:id="@+id/btn56_3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:backgroundTint="#ffeeaa"
+            android:text="確認" />
+    </LinearLayout>
+</LinearLayout>

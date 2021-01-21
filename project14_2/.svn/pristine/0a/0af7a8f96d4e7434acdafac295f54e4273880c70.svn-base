@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">代購平台</string>
+    <string name="title_activity_maps">Map</string>
+    <string name="forum">論壇</string>
+    <string name="buyer">逛逛</string>
+    <string name="seller">接單</string>
+    <string name="map">地圖</string>
+    <string name="notify">通知</string>
+    <string name="personal">個人</string>
+    <string name="bind">綁定</string>
+    <string name="switch1">關閉</string>
+</resources>

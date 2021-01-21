@@ -1,0 +1,205 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="#ffeedd"
+    android:orientation="vertical">
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/toolbar49"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="#ffd1a4"
+        android:elevation="4dp"
+        android:minHeight="?attr/actionBarSize"
+        android:theme="@style/AppTheme.ToolBarStyle"
+        app:navigationIcon="@drawable/arrow_back_icon"
+        app:popupTheme="@style/AppTheme.PopupOverlay"
+        app:title="代購者基本資訊"
+        app:titleTextColor="@android:color/white" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginRight="20dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/tv49_1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="個人資料"
+                android:textSize="18sp" />
+
+            <TextView
+                android:id="@+id/tv49_2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+                android:text="(請填寫真實資訊，非真實資訊將無法撥款)"
+                android:textColor="#FF0000" />
+
+            <TextView
+                android:id="@+id/tv49_4"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="電子郵件" />
+
+            <EditText
+                android:id="@+id/et49_2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:inputType="textEmailAddress"
+                android:hint="請填寫註冊時的郵件" />
+
+            <TextView
+                android:id="@+id/tv49_3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="手機號碼" />
+
+            <EditText
+                android:id="@+id/et49_1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:inputType="phone"
+                android:hint="請填寫註冊時的手機號碼" />
+
+
+
+            <TextView
+                android:id="@+id/tv49_5"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="姓名" />
+
+            <EditText
+                android:id="@+id/et49_3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ems="10"
+
+                android:hint="請填寫真實姓名" />
+
+            <TextView
+                android:id="@+id/tv49_6"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="生日" />
+
+            <TextView
+                android:id="@+id/tv49_7"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="(不接受20歲以下申請)"
+                android:textColor="#FF0000" />
+
+            <EditText
+                android:id="@+id/et49_4"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="ex.1999/01/01" />
+
+            <TextView
+                android:id="@+id/tv49_8"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="身分證字號" />
+
+            <EditText
+                android:id="@+id/et49_5"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:inputType="textPersonName" />
+
+            <TextView
+                android:id="@+id/tv49_9"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="戶籍地址" />
+
+            <EditText
+                android:id="@+id/et49_6"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:inputType="textPostalAddress" />
+
+            <TextView
+                android:id="@+id/tv49_10"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:text="收款資訊"
+                android:textSize="18sp" />
+
+            <TextView
+                android:id="@+id/tv49_11"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+                android:text="(請填寫您名下銀行帳戶，非本人帳戶將無法撥款。且仍需支付撥款手續費)"
+                android:textColor="#FF0000" />
+
+            <TextView
+                android:id="@+id/tv49_12"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="收款銀行" />
+
+            <EditText
+                android:id="@+id/et49_7"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:inputType="textPersonName" />
+
+            <TextView
+                android:id="@+id/tv49_13"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="收款銀行分行" />
+
+            <EditText
+                android:id="@+id/et49_8"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:inputType="textPersonName" />
+
+            <TextView
+                android:id="@+id/tv49_14"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="收款銀行帳號" />
+
+            <EditText
+                android:id="@+id/et49_9"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:inputType="textPersonName" />
+
+            <Button
+                android:id="@+id/btn49_1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="申請"
+                android:backgroundTint="#ffd1a4"/>
+
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>
+

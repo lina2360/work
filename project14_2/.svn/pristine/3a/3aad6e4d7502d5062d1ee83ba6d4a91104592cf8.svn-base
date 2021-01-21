@@ -1,0 +1,81 @@
+package com.project14.nccu105.project14_2;
+
+import android.content.Intent;
+import android.os.Bundle;
+import android.support.v7.app.AppCompatActivity;
+import android.view.View;
+import android.widget.Button;
+import android.widget.EditText;
+import android.widget.Toast;
+//2
+public class MainPage extends AppCompatActivity {
+    Button btn21, btn22, btn23, btn24;
+    EditText et21, et22;
+    String input, account;
+//    TextView tv23;
+
+    @Override
+    protected void onCreate(Bundle savedInstanceState) {
+        super.onCreate(savedInstanceState);
+        setContentView(R.layout.mainpage);
+        btn21 = (Button) findViewById(R.id.btn2_1);
+        btn22 = (Button) findViewById(R.id.btn2_2);
+        btn23 = (Button) findViewById(R.id.btn2_3);
+        btn24 = (Button) findViewById(R.id.btn2_4);
+        et21 = (EditText) findViewById(R.id.et2_1);
+        et22 = (EditText) findViewById(R.id.et2_2);
+//        tv23 = (TextView) findViewById(R.id.tv2_3);
+
+        View.OnClickListener OCL = new View.OnClickListener(){
+
+            @Override
+            public void onClick(View v) {
+
+                int id = ((Button) v).getId();
+                switch (id) {
+                    case R.id.btn2_1:
+
+//					BufferedReader br= new BufferedReader( new InputStreamReader(System.in));
+                        input = et21.getText().toString();
+                        account = "project14";
+//					String s=br.toString();
+//                        String result=et1.getText().toString();
+                        if (input.equals(account)) {
+                            String msg = "登入成功";
+                            Intent intent = new Intent();
+                            intent.setClass(MainPage.this,Personal.class);
+                            startActivity(intent);
+                            Toast.makeText(MainPage.this, msg, Toast.LENGTH_SHORT).show();
+                            MainPage.this.finish();
+                        } else {
+//                            tv23.setText(et21.getText().toString().trim());
+                            Toast.makeText(MainPage.this, "帳號有誤，請再輸入一次！", Toast.LENGTH_SHORT).show();
+                        }
+                        break;
+                    case R.id.btn2_2:
+                        et21.setText("");
+                        et22.setText("");
+                        Toast.makeText(MainPage.this, "重新輸入", Toast.LENGTH_SHORT).show();
+                        break;
+                    case R.id.btn2_3:
+                        String msg = "往註冊頁";
+                        Intent intent = new Intent();
+//                        intent.setClass(MainPage.this, Register.class);
+                        startActivity(intent);
+                        Toast.makeText(MainPage.this, msg, Toast.LENGTH_SHORT).show();
+                        MainPage.this.finish();
+                        break;
+                    case R.id.btn2_4:
+                        break;
+                }
+
+
+            }
+        };
+        btn21.setOnClickListener(OCL);
+        btn22.setOnClickListener(OCL);
+        btn23.setOnClickListener(OCL);
+
+
+    }
+}

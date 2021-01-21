@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="#FFFFFF">
+
+
+    <TextView
+        android:id="@+id/username"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_marginLeft="5dp"
+        android:layout_marginTop="5dp"
+        android:text="user"
+        android:layout_below="@id/article_content"
+
+        android:textSize="12dp"/>
+
+    <!--<TextView-->
+        <!--android:id="@+id/classify"-->
+        <!--android:layout_width="wrap_content"-->
+
+        <!--android:layout_height="wrap_content"-->
+        <!--android:layout_alignBottom="@+id/article_title"-->
+        <!--android:layout_alignParentEnd="true"-->
+        <!--android:layout_marginRight="5dp"-->
+        <!--android:text="classify"-->
+        <!--android:textColor="#FFFFFF" />-->
+
+    <TextView
+        android:id="@+id/time"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@id/count"
+        android:layout_alignParentEnd="true"
+        android:layout_marginRight="5dp"
+        android:text="time"
+        android:textSize="12dp" />
+
+    <TextView
+        android:id="@+id/article_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+        android:layout_marginLeft="5dp"
+        android:layout_marginTop="5dp"
+        android:text="text"
+        android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+        android:textSize="18dp"
+        android:textStyle="normal|bold" />
+
+    <TextView
+        android:id="@+id/count"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/article_content"
+
+        android:layout_marginTop="5dp"
+        android:layout_marginBottom="5dp"
+        android:layout_toRightOf="@id/imageView4"
+        android:text="0"
+        android:textSize="12dp" />
+
+    <TextView
+        android:id="@+id/article_content"
+        android:layout_width="300dp"
+        android:layout_height="19dp"
+        android:layout_below="@id/article_title"
+        android:layout_marginLeft="5dp"
+        android:layout_marginTop="5dp"
+        android:text="內文內容(大概就顯示一行的字就好了吧(?"
+        android:textSize="14dp" />
+
+    <!--<TextView-->
+
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:layout_toRightOf="@+id/article_content"-->
+        <!--android:layout_alignTop="@+id/article_content"-->
+        <!--android:layout_marginLeft="5dp"-->
+        <!--android:text="..."-->
+        <!--android:textSize="14dp" />-->
+
+    <ImageView
+        android:id="@+id/imageView4"
+        android:layout_width="10dp"
+        android:layout_height="10dp"
+        android:layout_below="@id/article_content"
+        android:layout_marginLeft="70dp"
+        android:layout_marginTop="9dp"
+        android:layout_marginRight="2dp"
+
+        app:srcCompat="@drawable/ic_chat_dark" />
+</RelativeLayout>
+

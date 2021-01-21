@@ -1,0 +1,15 @@
+package com.project14.nccu105.project14_2;
+
+import android.os.Bundle;
+import android.support.v7.app.AppCompatActivity;
+import android.widget.Button;
+import android.widget.ImageButton;
+import android.widget.ListView;
+
+public class BuyerOrder extends AppCompatActivity {
+    Button btn91,btn92,btn93,btn94,btn95,btn96,btn97;
+    ImageButton ib91;
+    ListView lv91,lv92,lv93;
+    protected void onCreate(Bundle savedInstanceState) {
+        super.onCreate(savedInstanceState);
+        setContentView(R.layout.buyerorder);}}

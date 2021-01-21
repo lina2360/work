@@ -1,0 +1,181 @@
+package com.project14.nccu105.project14_2;
+
+import android.content.Intent;
+import android.os.Bundle;
+import android.support.v7.app.AppCompatActivity;
+import android.view.View;
+import android.widget.AdapterView;
+import android.widget.ArrayAdapter;
+import android.widget.Button;
+import android.widget.ImageButton;
+import android.widget.ListAdapter;
+import android.widget.ListView;
+import android.widget.Toast;
+
+public class Personal_setting_myinvoice extends AppCompatActivity {
+    Button btn201,btn202,btn203,btn204,btn205,btn206;
+    ImageButton ib201;
+    ListView lv201,lv202;
+    protected void onCreate(Bundle savedInstanceState) {
+        super.onCreate(savedInstanceState);
+        setContentView(R.layout.personal_setting_myinvoice);
+
+        btn201 = (Button) findViewById(R.id.btn20_1);
+        btn202 = (Button) findViewById(R.id.btn20_2);
+        btn203 = (Button) findViewById(R.id.btn20_3);
+        btn204 = (Button) findViewById(R.id.btn20_4);
+        btn205 = (Button) findViewById(R.id.btn20_5);
+        btn206 = (Button) findViewById(R.id.btn20_6);
+        ib201 = (ImageButton) findViewById(R.id.ib20_1);
+        lv201=(ListView)findViewById(R.id.lv20_1);
+        lv202=(ListView)findViewById(R.id.lv20_2);
+
+
+        View.OnClickListener OCL = new View.OnClickListener(){
+
+            @Override
+            public void onClick(View v) {
+                if(v instanceof Button){
+                    int id = ((Button) v).getId();
+                    switch (id) {
+                        case R.id.btn20_1:
+                            String msg1 = "往論壇頁";
+                            Intent intent1 = new Intent();
+                            intent1.setClass(Personal_setting_myinvoice.this,Forum.class);
+                            startActivity(intent1);
+                            Toast.makeText(Personal_setting_myinvoice.this, msg1, Toast.LENGTH_SHORT).show();
+                            Personal_setting_myinvoice.this.finish();
+                            break;
+                        case R.id.btn20_2:
+                            String msg2 = "往逛逛頁";
+                            Intent intent2 = new Intent();
+                            intent2.setClass(Personal_setting_myinvoice.this,Buyer.class);
+                            startActivity(intent2);
+                            Toast.makeText(Personal_setting_myinvoice.this, msg2, Toast.LENGTH_SHORT).show();
+                            Personal_setting_myinvoice.this.finish();
+                            break;
+                        case R.id.btn20_3:
+                            String msg3 = "往接單頁";
+                            Intent intent3 = new Intent();
+                            intent3.setClass(Personal_setting_myinvoice.this,Seller.class);
+                            startActivity(intent3);
+                            Toast.makeText(Personal_setting_myinvoice.this, msg3, Toast.LENGTH_SHORT).show();
+                            Personal_setting_myinvoice.this.finish();
+
+                            break;
+                        case R.id.btn20_4:
+                            String msg4 = "往地圖頁";
+                            Intent intent4 = new Intent();
+                            intent4.setClass(Personal_setting_myinvoice.this,Maps.class);
+                            startActivity(intent4);
+                            Toast.makeText(Personal_setting_myinvoice.this, msg4, Toast.LENGTH_SHORT).show();
+                            Personal_setting_myinvoice.this.finish();
+                            break;
+                        case R.id.btn20_5:
+                            String msg5 = "往通知頁";
+                            Intent intent5 = new Intent();
+                            intent5.setClass(Personal_setting_myinvoice.this,Notify.class);
+                            startActivity(intent5);
+                            Toast.makeText(Personal_setting_myinvoice.this, msg5, Toast.LENGTH_SHORT).show();
+                            Personal_setting_myinvoice.this.finish();
+                            break;
+                        case R.id.btn20_6:
+                            String msg6 = "往個人頁";
+                            Intent intent6 = new Intent();
+                            intent6.setClass(Personal_setting_myinvoice.this,Personal.class);
+                            startActivity(intent6);
+                            Toast.makeText(Personal_setting_myinvoice.this, msg6, Toast.LENGTH_SHORT).show();
+                            Personal_setting_myinvoice.this.finish();
+                            break;
+
+
+
+
+                    }}
+                if(v instanceof ImageButton) {
+                    int id2 = ((ImageButton) v).getId();
+                    switch (id2) {
+                        case R.id.ib20_1:
+                            String msg7 = "返回";
+                            Intent intent7 = new Intent();
+                            intent7.setClass(Personal_setting_myinvoice.this,Personal_setting.class);
+                            startActivity(intent7);
+                            Toast.makeText(Personal_setting_myinvoice.this, msg7, Toast.LENGTH_SHORT).show();
+                            Personal_setting_myinvoice.this.finish();
+                            break;
+                    }}
+
+
+
+            }
+        };
+        btn201.setOnClickListener(OCL);
+        btn202.setOnClickListener(OCL);
+        btn203.setOnClickListener(OCL);
+        btn204.setOnClickListener(OCL);
+        btn205.setOnClickListener(OCL);
+        btn206.setOnClickListener(OCL);
+
+        ib201.setOnClickListener(OCL);
+
+
+        ListView listView1=(ListView)findViewById(R.id.lv20_1);
+        String[] value1=new String[]{"會員編號","歸戶驗證碼"};
+        ListAdapter adapter1=new ArrayAdapter<>(this,android.R.layout.simple_list_item_1,value1);
+        listView1.setAdapter(adapter1);
+
+
+
+
+
+
+
+
+
+        ListView listView2=(ListView)findViewById(R.id.lv20_2);
+        String[] value2=new String[]{"二聯式發票(個人)","三聯式發票(公司行號)","捐贈發票"};
+        ListAdapter adapter2=new ArrayAdapter<>(this,android.R.layout.simple_list_item_1,value2);
+        listView2.setAdapter(adapter2);
+
+        lv202.setOnItemClickListener(new AdapterView.OnItemClickListener() {
+            @Override
+            public void onItemClick(AdapterView<?> adapterView, View view, int index, long l) {
+
+                switch(index){
+                    case 0:
+                        String msg11 = "二聯式發票(個人)";
+                        Intent intent11 = new Intent();
+                        intent11.setClass(Personal_setting_myinvoice.this,Personal.class);
+                        startActivity(intent11);
+                        Toast.makeText(Personal_setting_myinvoice.this, msg11, Toast.LENGTH_SHORT).show();
+                        Personal_setting_myinvoice.this.finish();
+                        break;
+                    case 1:
+                        String msg12 = "三聯式發票(公司行號)";
+                        Intent intent12 = new Intent();
+                        intent12.setClass(Personal_setting_myinvoice.this,Personal.class);
+                        startActivity(intent12);
+                        Toast.makeText(Personal_setting_myinvoice.this, msg12, Toast.LENGTH_SHORT).show();
+                        Personal_setting_myinvoice.this.finish();
+                        break;
+                    case 2:
+                        String msg13 = "捐贈發票";
+                        Intent intent13 = new Intent();
+                        intent13.setClass(Personal_setting_myinvoice.this,Personal.class);
+                        startActivity(intent13);
+                        Toast.makeText(Personal_setting_myinvoice.this, msg13, Toast.LENGTH_SHORT).show();
+                        Personal_setting_myinvoice.this.finish();
+                        break;
+
+                }
+
+                Toast.makeText(Personal_setting_myinvoice.this,"你单击的是第"+(index+1)+"条数据",Toast.LENGTH_SHORT).show();
+
+
+            }});
+
+
+    }
+
+
+}

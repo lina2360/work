@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/chatroom2"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    android:background="#ffeedd"
+    tools:context="com.project14.nccu105.project14_2.ChatRoom2">
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/toolbar_cr"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="#ffd1a4"
+        android:elevation="4dp"
+        android:minHeight="?attr/actionBarSize"
+        android:theme="@style/AppTheme.ToolBarStyle"
+        app:navigationIcon="@drawable/arrow_back_icon"
+        app:popupTheme="@style/AppTheme.PopupOverlay"
+        app:title="聊天室"
+        app:titleTextColor="@android:color/white" />
+
+    <!--<ScrollView-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="match_parent"-->
+        <!--android:id="@+id/svsv"-->
+        <!--android:layout_above="@+id/inputlay"-->
+        <!--android:layout_below="@id/toolbar_cr">-->
+        <!--<LinearLayout-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="match_parent">-->
+
+    <ListView
+        android:id="@+id/list_of_messages"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@id/fab"
+        android:layout_alignParentStart="true"
+        android:transcriptMode="alwaysScroll"
+        android:stackFromBottom="true"
+    android:layout_below="@id/toolbar_cr"
+        android:layout_marginBottom="16dp"
+        android:divider="@android:color/transparent"
+        android:dividerHeight="16dp"
+        />
+        <!--</LinearLayout>-->
+
+
+    <!--</ScrollView>-->
+    <android.support.design.widget.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+      android:id="@+id/inputlay"
+        android:layout_alignParentBottom="true"
+        android:layout_toLeftOf="@id/fab">
+
+        <EditText
+            android:id="@+id/input"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Input"
+
+            />
+    </android.support.design.widget.TextInputLayout>
+    <android.support.design.widget.FloatingActionButton
+        android:id="@+id/fab"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:clickable="true"
+        android:layout_marginBottom="5dp"
+
+        android:src="@drawable/mr_media_play_dark"
+        android:tint="@android:color/white"
+        app:backgroundTint="#ffd1a4"
+        app:fabSize="mini" />
+</RelativeLayout>

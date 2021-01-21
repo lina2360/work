@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:background="#ffd1a4"
+        android:layout_height="0dp"
+        android:layout_weight="7">
+
+        <android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+            xmlns:app="http://schemas.android.com/apk/res-auto"
+            xmlns:tools="http://schemas.android.com/tools"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            tools:context=".MapActivity">
+
+            <android.support.design.widget.AppBarLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:theme="@style/AppTheme.AppBarOverlay">
+
+
+
+            </android.support.design.widget.AppBarLayout>
+
+
+            <include layout="@layout/content_map" />
+
+            <!--<android.support.design.widget.FloatingActionButton-->
+            <!--android:id="@+id/fab"-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:layout_gravity="bottom|end"-->
+            <!--android:layout_margin="@dimen/fab_margin"-->
+            <!--app:srcCompat="@android:drawable/ic_dialog_email" />-->
+
+        </android.support.design.widget.CoordinatorLayout>
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_gravity="bottom"
+        android:layout_weight="0.7"
+        android:background="#ffeedd"
+        android:elevation="30dp"
+        android:paddingTop="3dp"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/btn13_1"
+            style="?android:attr/borderlessButtonStyle"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_weight="1"
+            android:textSize="14dp"
+            android:backgroundTint="#ffeedd"
+            android:drawableTop="@drawable/button_house"
+            android:padding="0dp"
+            android:text="@string/forum" />
+
+        <!--<Button-->
+        <!--android:layout_width="0dp"-->
+        <!--android:layout_weight="1"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:text="@string/buyer"-->
+        <!--android:id="@+id/btn13_2"-->
+        <!--android:layout_gravity="center" />-->
+
+        <Button
+            android:id="@+id/btn13_3"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_weight="1"
+            android:backgroundTint="#ffeedd"
+            android:textSize="14dp"
+            android:text="@string/seller"
+            style="?android:attr/borderlessButtonStyle"
+            android:padding="0dp"
+            android:drawableTop="@drawable/button_shoppingbag"/>
+
+        <Button
+            android:id="@+id/btn13_4"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_weight="1"
+            android:textSize="14dp"
+            android:backgroundTint="#ffeedd"
+
+            android:text="@string/map"
+            style="?android:attr/borderlessButtonStyle"
+            android:padding="0dp"
+            android:drawableTop="@drawable/button_map"/>
+
+        <Button
+            android:id="@+id/btn13_5"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_weight="1"
+            android:backgroundTint="#ffeedd"
+            android:text="@string/notify"
+            android:textSize="14dp"
+            style="?android:attr/borderlessButtonStyle"
+            android:padding="0dp"
+            android:drawableTop="@drawable/button_notification"
+            />
+
+        <Button
+            android:id="@+id/btn13_6"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_weight="1"
+            android:backgroundTint="#ffeedd"
+            android:text="@string/personal"
+            android:textSize="14dp"
+            style="?android:attr/borderlessButtonStyle"
+            android:padding="0dp"
+            android:drawableTop="@drawable/button_avatar"/>
+    </LinearLayout>
+
+</LinearLayout>

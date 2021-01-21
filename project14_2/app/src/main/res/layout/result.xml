@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ffeedd"
+    android:orientation="vertical">
+
+    <android.support.v7.widget.Toolbar
+        android:focusable="false"
+        android:id="@+id/toolbar_62"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="#ffd1a4"
+        android:elevation="4dp"
+        android:minHeight="?attr/actionBarSize"
+        android:theme="@style/AppTheme.ToolBarStyle"
+        app:navigationIcon="@drawable/arrow_back_icon"
+        app:popupTheme="@style/AppTheme.PopupOverlay"
+
+        app:title="國家名稱/搜尋單詞"
+        app:titleTextColor="@android:color/white" />
+
+    <ListView
+        android:id="@+id/lv62"
+
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginBottom="10dp"
+        android:background="#ffeedd"
+        android:divider="#FFeedd"
+        android:dividerHeight="4dp"
+        android:foregroundGravity="center"
+        android:focusable="true"
+        android:layout_below="@+id/toolbar_62"/>
+
+
+</LinearLayout>

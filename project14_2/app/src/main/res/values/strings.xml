@@ -1,0 +1,93 @@
+<resources>
+    <string name="app_name">BuyBuyMap</string>
+    <string name="title_activity_maps">Map</string>
+    <string name="forum">論壇</string>
+    <string name="buyer">逛逛</string>
+    <string name="seller">接單</string>
+    <string name="map">地圖</string>
+    <string name="notify">通知</string>
+    <string name="personal">個人</string>
+    <string name="bind">綁定</string>
+    <string name="switch1">關閉</string>
+    <string name="topic1">分類頁面</string>
+    <string name="search">查詢</string>
+    <string name="login_success">登入成功</string>
+    <string name="login_failure">此用戶還沒成為會員，請先註冊</string>
+    <string name="login_account">請輸入帳號</string>
+    <string name="login_password">請輸入密碼</string>
+    <string name="facebook_application_id">445623332864255</string>
+    <string name="facebook_app_id">445623332864255</string>
+    <string name="fb_login_protocol_scheme">fb445623332864255</string>
+
+
+    <string-array name="type">
+        <item>鞋類</item>
+        <item>包包</item>
+        <item>上衣</item>
+        <item>下裝</item>
+        <item>連身</item>
+        <item>配件</item>
+        <item>美妝</item>
+        <item>科技</item>
+        <item>家電</item>
+        <item>家具</item>
+        <item>孩童</item>
+        <item>寵物</item>
+        <item>食物</item>
+        <item>戶外與運動</item>
+        <item>玩具</item>
+        <item>書和文具</item>
+        <item>內衣</item>
+        <item>其他</item>
+    </string-array>
+    <string-array name="country">
+        <item>台灣</item>
+        <item>中國</item>
+        <item>日本</item>
+        <item>韓國</item>
+        <item>泰國</item>
+        <item>新加坡</item>
+        <item>美國</item>
+        <item>英國</item>
+        <item>法國</item>
+        <item>義大利</item>
+        <item>西班牙</item>
+        <item>葡萄牙</item>
+        <item>瑞士</item>
+        <item>德國</item>
+        <item>奧地利</item>
+        <item>土耳其</item>
+        <item>瑞典</item>
+        <item>挪威</item>
+        <item>冰島</item>
+        <item>荷蘭</item>
+        <item>比利時</item>
+        <item>加拿大</item>
+        <item>巴西</item>
+        <item>非洲</item>
+        <item>俄羅斯</item>
+        <item>香港</item>
+        <item>澳洲</item>
+        <item>紐西蘭</item>
+        <item>印度</item>
+    </string-array>
+    <string-array name="deliver">
+        <item>宅配(轉帳)</item>
+        <item>7-11貨到付款</item>
+        <item>7-11取貨(轉帳)</item>
+        <item>全家貨到付款</item>
+        <item>全家取貨(轉帳)</item>
+    </string-array>
+    <string-array name="credit">
+        <item>VISA</item>
+        <item>MASTER</item>
+        <item>JCB</item>
+        <item>銀聯卡</item>
+    </string-array>
+
+    <string-array name="shop_address">
+        <item>全家</item>
+        <item>7-11</item>
+    </string-array>
+</resources>
+

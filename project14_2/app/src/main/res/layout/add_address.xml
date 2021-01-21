@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ffeedd"
+    android:orientation="vertical">
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/toolbar54"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="#ffd1a4"
+        android:elevation="4dp"
+        android:minHeight="?attr/actionBarSize"
+        android:theme="@style/AppTheme.ToolBarStyle"
+        app:navigationIcon="@drawable/arrow_back_icon"
+        app:popupTheme="@style/AppTheme.PopupOverlay"
+        app:title="新增地址"
+        app:titleTextColor="@android:color/white" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginRight="20dp"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/tv54_3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="城市" />
+
+        <EditText
+            android:id="@+id/et54_3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:hint="台北市"
+            android:inputType="textPersonName" />
+
+        <TextView
+            android:id="@+id/tv54_4"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="詳細地址(路街巷弄號)" />
+
+        <EditText
+            android:id="@+id/et54_4"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:hint="eg.文山區指南路二段64號"
+            android:inputType="textPersonName" />
+
+        <TextView
+            android:id="@+id/tv54_5"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="請填寫正確地址以保障收貨" />
+
+        <Button
+            android:id="@+id/btn54_1"
+            android:layout_width="120dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="right"
+
+            android:backgroundTint="#ffeeaa"
+            android:text="新增" />
+    </LinearLayout>
+</LinearLayout>

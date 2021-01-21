@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background=" #ffeedd"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginRight="20dp"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/tv50_1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="您已完成代購者申請"
+            android:textAlignment="center"
+            android:textSize="18sp" />
+
+        <TextView
+            android:id="@+id/tv50_2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="旅行者需等待資料驗證結束才可使用(約1至3工作天)才可以進行接單、新增商品及收付款功能。" />
+
+        <Button
+            android:id="@+id/btn50_1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="100dp"
+            android:backgroundTint="#ffeeaa"
+            android:text="逛逛接單" />
+
+        <Button
+            android:id="@+id/btn50_2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="旅行者常見問題"
+            android:backgroundTint="#ffd1a4"/>
+    </LinearLayout>
+
+</LinearLayout>
