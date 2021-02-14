@@ -9,3 +9,5 @@
 <center><img src='./2.png' width='200px'></center>
 訂購畫面
 <center><img src='./4.png' width='200px'></center>
+紀錄查詢
+<center><img src='./7.png' width='200px'></center>
