@@ -10,6 +10,6 @@ Master
 
 1.1091Advanced(Mask app)
 
-2.https://github.com/lina2360/HiSeqGan(co-editor)
+2.https://github.com/lina2360/HiSeqGan (co-editor)
 
-3.https://github.com/lina2360/Badminton-winner-strategy-synthesis-based-on-player-position-motions(My paper)
+3.https://github.com/lina2360/Badminton-winner-strategy-synthesis-based-on-player-position-motions (My paper)
