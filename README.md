@@ -4,7 +4,7 @@ Bachelor
 
 2.Tensorflow_lstm.py(Machine learning)
 
-3.資通爬蟲CISCO網頁.py/資通爬蟲PA網頁.py/資通爬蟲第三廠商網頁.py (Web Crawler/python)
+3.資通安全實務Web Crawler (Web Crawler/python)
 
 Master
 
