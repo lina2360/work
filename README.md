@@ -8,7 +8,9 @@ Bachelor
 
 Master
 
-1.1091Advanced(Mask app)
+1.1091Advanced(Mask app)--2025更新預定
+前端:Android Studio(JAVA)
+後端:Node.js + Express
 
 2.https://github.com/lina2360/HiSeqGan (co-editor/Machine learning)
 
