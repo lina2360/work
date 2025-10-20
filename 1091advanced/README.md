@@ -1,5 +1,7 @@
-HttpURLConnection和OKHTTP Java 標準庫中的一部分。簡單且更易用的 API，並且在處理 HTTP 請求時可以自動處理許多低層的細節。
+HttpURLConnection Java 標準庫中的一部分。簡單且更易用的 API，並且在處理 HTTP 請求時可以自動處理許多低層的細節。
+
 OkHttp 第三方的 HTTP 客戶端庫 比原生的 HttpURLConnection 更容易使用。API 比較底層，使用起來比較繁瑣。
+
 登入畫面
 <center><img src='./1.png' width='200px'></center>
 註冊畫面
