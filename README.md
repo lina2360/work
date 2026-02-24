@@ -16,4 +16,15 @@ Master
 
 3.https://github.com/lina2360/Badminton-winner-strategy-synthesis-based-on-player-position-motions (My paper/Machine learning) 
 
-<pre> ```text project-name/ ├── app/ │ ├── src/ │ │ ├── main/ │ │ │ ├── java/ │ │ │ └── res/ │ │ └── test/ │ └── build.gradle ├── gradle/ ├── README.md └── settings.gradle ``` </pre>
+<pre> ```text project-name/ 
+  ├── app/ 
+  │   ├── src/ 
+  │   │   ├── main/ 
+  │   │   │   ├── java/ 
+  │   │   │   └── res/ 
+  │   │   └── test/ 
+  │   └── build.gradle
+  ├── gradle/ 
+  ├── README.md 
+  └── settings.gradle 
+  ``` </pre>
